@@ -1,0 +1,13 @@
+设待排序记录的数据类型为：
+#define MAXSIZE 20
+typedef int KeyType;
+
+typedef struct {
+	KeyType key; //关键字项
+	InfoType otherinfo;
+}RedType //记录类型
+
+typedef struct {
+	RedType r[MAXSIZE + 1]; r[0]闲置用作监视哨
+	int length;
+}SqList; //顺序表类型
